@@ -1,7 +1,8 @@
 #!/bin/bash
-cd ~
+
+path=$(pwd)
 mkdir $3
-cp -r $1 ~/$3
+cp -r $1 $path/$3
 x=$2
 func(){
  cd $1
@@ -19,6 +20,6 @@ func(){
  done
 }
 
-func ~/$3
-cd ~
+func $path/$3
+cd $path
 tar -cf $4 $3
