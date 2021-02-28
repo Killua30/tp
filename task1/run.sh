@@ -22,5 +22,5 @@ func(){
 
 func $path/$3
 cd $path
-tar -cf $4 $3
+tar -zcf $4 $3
 echo "done"
